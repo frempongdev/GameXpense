@@ -24,15 +24,15 @@ default: &default
 development:
   <<: *default
   database: gamexpense_development
+  username: postgres
+  password: admin
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: gamexpense
 
   # The password associated with the postgres role (username).
-  #password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -58,6 +58,8 @@ development:
 test:
   <<: *default
   database: gamexpense_test
+  username: postgres
+  password: admin
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,5 +84,5 @@ test:
 production:
   <<: *default
   database: gamexpense_production
-  username: gamexpense
+  username: postgres
   password: <%= ENV["GAMEXPENSE_DATABASE_PASSWORD"] %>
