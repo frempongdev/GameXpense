@@ -1,0 +1,17 @@
+<div id="<%= dom_id game %>">
+  <p>
+    <strong>Name:</strong>
+    <%= game.name %>
+  </p>
+
+  <p>
+    <strong>Icon:</strong>
+    <%= link_to game.icon.filename, game.icon if game.icon.attached? %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= game.user_id %>
+  </p>
+
+</div>
