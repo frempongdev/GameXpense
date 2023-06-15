@@ -1,0 +1,15 @@
+#expenses {
+    margin-top: 4%;
+}
+
+.exp-box {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    padding: 0% 5%;
+    background-color: white;
+    margin-top: 2%;
+}
+
+.exp-amount {
+    text-align: end;
+}
