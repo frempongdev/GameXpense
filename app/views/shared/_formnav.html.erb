@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag 'nav' %>
+
+<div class="nav-wrapper">
+    <nav class="nav">
+        <div class="left-nav">
+            <%= link_to back_path do%>
+                <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+            <% end %>
+        </div>
+        <div class="nav-links">
+                <h3 class="nav-text">EXPENSES</h3>
+        </div>
+        <div class="right-nav">
+          <% if current_user %>
+            <% if current_user.profile_photo.attached? %>
+              <%= image_tag current_user.profile_photo, class: "profile-photo" %>
+            <% end %>
+            <span class="username"><%= current_user.name %></span>
+            <div class="b-box">
+              <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class: "sign-out" %>
+            </div>
+          <% end %>
+        </div>
+
+    </nav>
+</div>
