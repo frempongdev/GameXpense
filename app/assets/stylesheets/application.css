@@ -14,7 +14,6 @@
  *= require_self
  */
 body {
-    margin: 0%;
-    font-family: proxima;
-    background-color: rgb(241, 241, 241);
+  margin: 0%;
+  background-color: rgb(241, 241, 241);
 }

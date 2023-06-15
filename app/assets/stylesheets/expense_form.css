@@ -1,47 +1,46 @@
 .expense-form {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 2%;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .error-messages {
-    color: red;
-    margin-bottom: 2%;
-  }
-  
-  .form-group {
-    margin-bottom: 2%;
-  }
-  
-  .form-control {
-    width: 90%;
-    padding: 1%;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    background-color: #3778C2;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  .btn-primary {
-    background-color: #3778C2;
-  }
-  
-  .btn-primary:hover {
-    background-color: #245682;
-  }
-  
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-messages {
+  color: red;
+  margin-bottom: 2%;
+}
+
+.form-group {
+  margin-bottom: 2%;
+}
+
+.form-control {
+  width: 90%;
+  padding: 1%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #3778c2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #3778c2;
+}
+
+.btn-primary:hover {
+  background-color: #245682;
+}
