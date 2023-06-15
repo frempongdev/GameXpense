@@ -1,3 +1,75 @@
-.signup {
-  padding: 0%;
-}
+.form-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .notice,
+  .alert {
+    margin-bottom: 10px;
+  }
+  
+  .login-form .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .login-form .input-field {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-form .form-actions {
+    text-align: start;
+  }
+  
+  .login-form .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form .remember-me-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .login-form .forgot-password-link {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+    text-decoration: none;
+  }
+  
+  .login-form .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  .new-input-field {
+    width: 94%;
+    padding: 3%;
+  }
+
+  .next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
