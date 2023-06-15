@@ -1,10 +1,5 @@
-<h1>Editing game</h1>
+<%= render 'shared/nav', back_path: :back, nav_text: 'Edit Game' %>
+
+<h4>Please edit game details</h4>
 
 <%= render "form", game: @game %>
-
-<br>
-
-<div>
-  <%= link_to "Show this game", @game %> |
-  <%= link_to "Back to games", games_path %>
-</div>

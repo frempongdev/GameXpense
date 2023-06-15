@@ -1,15 +1,17 @@
 class GamesController < ApplicationController
   before_action :authenticate_user!
 
-  before_action :set_game, only: %i[ show edit update destroy ]
+  before_action :set_game, only: %i[show edit update destroy]
 
   # GET /games or /games.json
   def index
-    @games = Game.all
+    @games = Game.where(user_id: current_user.id)
   end
 
   # GET /games/1 or /games/1.json
   def show
+    @games = Game.all
+    @game_expenses = @game.all_expenses
   end
 
   # GET /games/new
@@ -18,8 +20,7 @@ class GamesController < ApplicationController
   end
 
   # GET /games/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /games or /games.json
   def create
@@ -27,7 +28,7 @@ class GamesController < ApplicationController
 
     respond_to do |format|
       if @game.save
-        format.html { redirect_to game_url(@game), notice: "Game was successfully created." }
+        format.html { redirect_to game_url(@game), notice: 'Game was successfully created.' }
         format.json { render :show, status: :created, location: @game }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -40,7 +41,7 @@ class GamesController < ApplicationController
   def update
     respond_to do |format|
       if @game.update(game_params)
-        format.html { redirect_to game_url(@game), notice: "Game was successfully updated." }
+        format.html { redirect_to game_url(@game), notice: 'Game was successfully updated.' }
         format.json { render :show, status: :ok, location: @game }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -54,19 +55,20 @@ class GamesController < ApplicationController
     @game.destroy
 
     respond_to do |format|
-      format.html { redirect_to games_url, notice: "Game was successfully destroyed." }
+      format.html { redirect_to games_url, notice: 'Game was successfully deleted.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_game
-      @game = Game.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def game_params
-      params.require(:game).permit(:name, :icon, :user_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_game
+    @game = Game.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def game_params
+    params.require(:game).permit(:name, :icon, :user_id)
+  end
 end

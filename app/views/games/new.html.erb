@@ -1,9 +1,7 @@
-<h1>New game</h1>
+<%= stylesheet_link_tag 'game_form' %>
+<%= render 'shared/nav', back_path: :back, nav_text: 'New Game' %>
+
+<h4>Please add Game details</h4>
 
 <%= render "form", game: @game %>
 
-<br>
-
-<div>
-  <%= link_to "Back to games", games_path %>
-</div>
