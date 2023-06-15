@@ -1,6 +1,6 @@
-<%= form_with(model: game) do |form| %>
+<%= form_with(model: game, class: "game-form") do |form| %>
   <% if game.errors.any? %>
-    <div style="color: red">
+    <div class="error-messages">
       <h2><%= pluralize(game.errors.count, "error") %> prohibited this game from being saved:</h2>
 
       <ul>
@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.file_field :icon %>
+  <div class="form-group">
+    <%= form.label :icon %>
+    <%= form.file_field :icon, class: "form-control" %>
   </div>
 
   <div>
     <%= form.hidden_field :user_id, value: current_user.id %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Save", class: "btn btn-primary" %>
   </div>
 <% end %>
