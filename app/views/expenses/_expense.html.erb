@@ -1,0 +1,15 @@
+<div id="<%= dom_id expense %>">
+  <div class="exp-box">
+
+    <h3>
+      <%= expense.name %>
+    </h3>
+  
+    <p class="exp-amount">
+      <strong>Amount Spent:</strong>
+      <%= number_to_currency(expense.amount) %>
+    </p>
+
+  </div>
+
+</div>
