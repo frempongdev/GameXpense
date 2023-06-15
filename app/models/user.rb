@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   has_one_attached :profile_photo
+  has_many :games
+  has_many :expenses
 end
