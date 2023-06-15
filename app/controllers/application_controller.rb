@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:name, :email, :password, :current_password, :profile_photo) }
   end
 
-  private 
+  private
+
   def after_sign_in_path_for(resource)
     # Customize the redirect path based on your requirements
     # For example:

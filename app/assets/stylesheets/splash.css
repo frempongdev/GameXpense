@@ -1,37 +1,37 @@
 .splash-wrapper {
-    height: 99vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .splash-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
 }
 
 .splash-links > * {
-    border: solid rgb(156, 156, 156) 1px;
-    text-align: center;
-    padding: 5% 0%;
-    font-size: 2rem;
-    text-decoration: none;
-    color: rgb(124, 124, 124);
+  border: solid rgb(156, 156, 156) 1px;
+  text-align: center;
+  padding: 5% 0%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(124, 124, 124);
 }
 
 .big-logo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .login {
-    background-color: #437cbd;
-    color: white;
+  background-color: #437cbd;
+  color: white;
 }
 
 .signup {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
