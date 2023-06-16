@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: gamexpense_production
-  username: postgres
-  password: <%= ENV["GAMEXPENSE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
