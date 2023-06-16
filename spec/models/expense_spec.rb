@@ -33,7 +33,7 @@ RSpec.describe Expense, type: :model do
     end
 
     it 'should belong to a games' do
-        expect(@expense.game_id).to eq(5)
+      expect(@expense.game_id).to eq(5)
     end
   end
 end
