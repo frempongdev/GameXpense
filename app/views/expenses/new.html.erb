@@ -1,0 +1,7 @@
+<%= stylesheet_link_tag 'game_form' %>
+
+<%= render 'shared/nav', back_path: :back, nav_text: 'New Expense' %>
+
+<h4>Please add expense details</h4>
+
+<%= render "form", expense: @expense %>

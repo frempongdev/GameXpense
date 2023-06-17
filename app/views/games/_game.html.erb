@@ -1,0 +1,21 @@
+<div id="<%= dom_id game %>">
+  <div class="game-wrapper">
+
+    <div class="game-image-box">
+      <% if game.icon.attached? %>
+        <%= image_tag game.icon, class: "game-icon" %>
+      <% end %>
+    </div>
+
+    <h3 class="cat-name">
+      <%= game.name %>
+    </h3>
+  
+    <div class="total-box">
+      <p class="cash"><%= number_to_currency(game.total_expense) %></p>
+      <p class="total">Total Expense</p>
+    </div>
+
+ </div>
+  
+</div>

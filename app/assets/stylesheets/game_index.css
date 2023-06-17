@@ -1,0 +1,89 @@
+#games {
+  padding: 0% 2%;
+}
+
+.game-wrapper {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.8fr;
+  margin-bottom: 2%;
+  height: 100px;
+  align-items: center;
+  border: solid 1px rgb(227, 227, 227);
+  border-radius: 32px 0 0 32px;
+  overflow: hidden;
+}
+
+.game-icon {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.game-image-box {
+  display: flex;
+  align-items: center;
+}
+
+.cat-name {
+  text-align: center;
+}
+
+.game-link {
+  text-decoration: none;
+  color: #434b54;
+}
+
+.total-box > * {
+  margin: 0%;
+  text-align: center;
+}
+
+.cash {
+  font-weight: bolder;
+}
+
+.total {
+  font-size: 0.6rem;
+}
+
+.new-game-box {
+  background-color: #5fb523;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+.new-game {
+  border: white 1px solid;
+  text-decoration: none;
+  color: white;
+  padding: 5% 38%;
+}
+
+.new-expense {
+  border: white 1px solid;
+  text-decoration: none;
+  color: white;
+  padding: 5% 36%;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  gap: 2%;
+}
+
+.game-buttons > a {
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 3px;
+  background-color: rgb(239, 239, 239);
+  color: black;
+  text-decoration: none;
+  padding: 0% 2%;
+}

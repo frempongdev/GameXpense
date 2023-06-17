@@ -1,0 +1,61 @@
+.nav {
+  border-bottom: 4px solid #437cbd;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  background: linear-gradient(to bottom, #3778c2, #2e6ca1);
+  margin-top: 0%;
+}
+
+.fa {
+  color: white;
+  font-size: 2rem;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.left-nav {
+  padding: 20%;
+}
+
+.nav-links {
+  text-align: center;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 5% 8%;
+}
+
+.profile-photo {
+  height: 30px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.nav-text {
+  color: white;
+  margin-bottom: 10%;
+}
+
+.username {
+  font-size: 0.8rem;
+  color: aliceblue;
+}
+
+.b-box {
+  display: flex;
+  justify-content: end;
+}
+
+.sign-out {
+  font-size: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  border: solid 0.5px rgb(255, 255, 255);
+}

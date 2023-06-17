@@ -1,0 +1,23 @@
+<%= render 'shared/mainnav', back_path: games_path %>
+
+<p style="color: green"><%= notice %></p>
+
+<div class="cat-index">
+  <% if @games.empty? %>
+    <p>No games added yet!</p>
+  <% else %>
+    <div id="games">
+      <% @games.each do |game| %>
+        <div class="cat-box">
+          <%= link_to game, class: "game-link" do %>
+            <%= render game %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="new-game-box">
+    <%= link_to "Add game", new_game_path, class: "new-game" %>
+  </div>
+</div>

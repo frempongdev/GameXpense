@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag 'expense' %>
+<%= render 'shared/nav', back_path: games_path, nav_text: 'EXPENSES' %>
+<p style="color: green"><%= notice %></p>
+
+<%= render @game %>
+
+<div class="game-buttons">
+  <%= link_to "Edit game", edit_game_path(@game) %> |
+  <%= button_to "Delete game", @game, method: :delete %>
+</div>
+
+<% if @game_expenses.empty? %>
+  <p>No expenses added yet!</p>
+<% else %>
+  <div id="expenses">
+    <% @game_expenses.each do |expense| %>
+      <%= render expense %>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="new-game-box">
+  <%= link_to "Add expense", new_expense_path, class: "new-expense" %>
+</div>
