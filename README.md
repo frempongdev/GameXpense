@@ -37,9 +37,9 @@
 
 # Screenshots 
 <div style="display: flex, gap: 3%, height: 10px">
-  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/78d27af0-4828-4707-a190-2ae4c4c57124" alt="pic1" height= "500px"/>
-  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/7163adf9-3236-4263-b897-b7d8abbacb0c" alt="pic2" height= "500px"/>
-  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/d5fe8932-8a6f-4e7b-9da5-28f5ed5e0449" alt="pic3" height= "500px"/>
+  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/78d27af0-4828-4707-a190-2ae4c4c57124" alt="pic1" height= "400px"/>
+  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/7163adf9-3236-4263-b897-b7d8abbacb0c" alt="pic2" height= "400px"/>
+  <img src="https://github.com/frempongdev/GameXpense/assets/117144028/d5fe8932-8a6f-4e7b-9da5-28f5ed5e0449" alt="pic3" height= "400px"/>
 </div>
 
 
